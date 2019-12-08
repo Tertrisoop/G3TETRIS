@@ -314,7 +314,7 @@ namespace Tetris
             if (m_lv < 9)
                 m_lv++;
             m_numline = 0;
-            constuct();
+            
         }
 
         public void constuct()        //khởi tạo

@@ -171,7 +171,7 @@ namespace Tetris
                     highscore = Tetris.score;
                     Form2 f2 = new Form2();
                     f2.addscore(highscore);
-                    MessageBox.Show("Game Over! ");
+                    MessageBox.Show("Game Over!! your score "+highscore);
                 }
             }
             else

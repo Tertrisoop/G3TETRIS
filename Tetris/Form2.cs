@@ -14,7 +14,7 @@ namespace Tetris
     public partial class Form2 : Form
     {
         List<int> listScore = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        string sFileScore = @"D:\G3\G3TETRIS\score.json";
+        string sFileScore = @"D:\STD\CS OOP\clonegit\G3TETRIS\score.json";
         public Form2()
         {
             InitializeComponent();
