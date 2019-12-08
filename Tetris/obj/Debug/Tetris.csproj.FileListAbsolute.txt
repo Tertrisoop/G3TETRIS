@@ -7,3 +7,14 @@ D:\STD\CS OOP\G3TETRIS\Tetris\obj\Debug\Tetris.Properties.Resources.resources
 D:\STD\CS OOP\G3TETRIS\Tetris\obj\Debug\Tetris.csproj.GenerateResource.cache
 D:\STD\CS OOP\G3TETRIS\Tetris\obj\Debug\Tetris.exe
 D:\STD\CS OOP\G3TETRIS\Tetris\obj\Debug\Tetris.pdb
+D:\G3\G3TETRIS\Tetris\bin\Debug\Tetris.exe.config
+D:\G3\G3TETRIS\Tetris\bin\Debug\Tetris.exe
+D:\G3\G3TETRIS\Tetris\bin\Debug\Tetris.pdb
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.csprojAssemblyReference.cache
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.Form1.resources
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.Properties.Resources.resources
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.csproj.GenerateResource.cache
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.csproj.CoreCompileInputs.cache
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.exe
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.pdb
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.Form2.resources

@@ -18,6 +18,7 @@ namespace Tetris
         private bool rolateright;
         private bool pause;
         private bool left;
+        public static int highscore = 0;
 
         public Form1()
         {
@@ -153,7 +154,7 @@ namespace Tetris
             {
                 showrealtime();
                 lblNumLine.Text = t.numLineas.ToString();
-                lblScore.Text = t.score.ToString();
+                lblScore.Text = Tetris.score.ToString();
                 if (down)
                     showrealtime();
                 else
@@ -167,6 +168,9 @@ namespace Tetris
                 {
                     timer1.Stop();
                     timer2.Stop();
+                    highscore = Tetris.score;
+                    Form2 f2 = new Form2();
+                    f2.addscore(highscore);
                     MessageBox.Show("Game Over! ");
                 }
             }
@@ -174,7 +178,7 @@ namespace Tetris
             {
                 
                 lblNumLine.Text = t.numLineas.ToString();
-                lblScore.Text = t.score.ToString();
+                lblScore.Text = Tetris.score.ToString();
                 constuct();
                 t.levelup();               
                 lblv.Text = ((int)t.level + 1).ToString();
@@ -253,6 +257,12 @@ namespace Tetris
             {
                 showrealtime();
             }
+        }
+
+        private void HIGHSCOREToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
         }
     }
 }
