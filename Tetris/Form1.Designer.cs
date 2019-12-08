@@ -46,7 +46,6 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.hIGHSCOREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.playzone)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.futurebrick)).BeginInit();
@@ -80,7 +79,6 @@
             this.gAMEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sTARTToolStripMenuItem,
             this.pAUSEToolStripMenuItem,
-            this.hIGHSCOREToolStripMenuItem,
             this.eXITToolStripMenuItem});
             this.gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
@@ -91,7 +89,7 @@
             // 
             this.sTARTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.sTARTToolStripMenuItem.Name = "sTARTToolStripMenuItem";
-            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.sTARTToolStripMenuItem.Text = "START";
             this.sTARTToolStripMenuItem.Click += new System.EventHandler(this.sTARTToolStripMenuItem_Click);
             // 
@@ -99,7 +97,7 @@
             // 
             this.pAUSEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.pAUSEToolStripMenuItem.Name = "pAUSEToolStripMenuItem";
-            this.pAUSEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pAUSEToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.pAUSEToolStripMenuItem.Text = "PAUSE";
             this.pAUSEToolStripMenuItem.Click += new System.EventHandler(this.pAUSEToolStripMenuItem_Click);
             // 
@@ -107,7 +105,7 @@
             // 
             this.eXITToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
-            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.eXITToolStripMenuItem.Text = "EXIT";
             // 
             // gIỚITHIỆUToolStripMenuItem
@@ -194,13 +192,6 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // hIGHSCOREToolStripMenuItem
-            // 
-            this.hIGHSCOREToolStripMenuItem.Name = "hIGHSCOREToolStripMenuItem";
-            this.hIGHSCOREToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hIGHSCOREToolStripMenuItem.Text = "HIGH SCORE";
-            this.hIGHSCOREToolStripMenuItem.Click += new System.EventHandler(this.HIGHSCOREToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,11 +241,7 @@
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem gIỚITHIỆUToolStripMenuItem;
-=======
-        private System.Windows.Forms.ToolStripMenuItem hIGHSCOREToolStripMenuItem;
->>>>>>> 743c32fdd5c448400a4abbcdad711daf89af8795
     }
 }
 

@@ -17,7 +17,7 @@ namespace Tetris
         public const int playzonecol = 13;    //hiển thị cột
         public const int witdh = 20;          //chiều rộng
         public const int heigth = 20;           //chiều cao 
-        public const int scountlv = 5; //số lượng dòng của cấp
+        public const int scountlv = 20; //số lượng dòng của cấp
 
         //các màu dành cho các khối gạch
         private static Color[] m_COLOR = new Color[7] { Color.Yellow, Color.Crimson, Color.DeepPink, Color.Indigo, Color.SteelBlue, Color.DarkGreen, Color.OrangeRed };

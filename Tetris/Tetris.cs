@@ -17,7 +17,6 @@ namespace Tetris
         private int m_lv;                        //cấp độ
         private int m_numline;                    //đếm dòng
         private Random r;
-        public static int score = 0;
 
         #region vẽ và thiết lập xoay cho các khối gạch
         public Tetris()
@@ -203,14 +202,14 @@ namespace Tetris
             }
         }
 
-        /*public int score
+        public int score
 
         {
             get
             {
                 return m_score;
             }
-        }*/
+        }
 
         public int numLineas
         {
@@ -314,7 +313,7 @@ namespace Tetris
             if (m_lv < 9)
                 m_lv++;
             m_numline = 0;
-            
+            constuct();
         }
 
         public void constuct()        //khởi tạo
@@ -333,21 +332,10 @@ namespace Tetris
 
         private int calculatescore(int numlinecomplete)      //tính điểm khi ăn dòng
         {
-            switch (numlinecomplete)
-            {
-                case 1:
-                    score += 10 * (m_lv + 1);
-                    break;
-                case 2:
-                    score += 2 * 10 * (m_lv + 1);
-                    break;
-                case 3:
-                    score += 4 * 10 * (m_lv + 1);
-                    break;
-                case 4:
-                    score += 10 * 10 * (m_lv + 1);
-                    break;
-            }
+            int score = 0;
+
+            score += numlinecomplete * 50;
+
             return score;
         }
     }
