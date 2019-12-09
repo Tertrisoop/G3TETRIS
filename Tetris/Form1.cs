@@ -18,10 +18,12 @@ namespace Tetris
         private bool rolateright;
         private bool pause;
         private bool left;
-
+        public static int highscore = 0;
+        private int check;
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void sTARTToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,7 +107,7 @@ namespace Tetris
         {
             Bitmap B = new Bitmap(playzone.Width, playzone.Height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             Graphics G = Graphics.FromImage(B);
-            G.Clear(Color.DarkKhaki);
+            G.Clear(Color.Turquoise);
             for (int x = 0; x < constants.playzonecol; x++)
             {
                 for (int y = 0; y < constants.playzonerow; y++)
@@ -149,11 +151,11 @@ namespace Tetris
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (t.numLineas < constants.scountlv)
+            if (t.pnumLineas < constants.scountlv)
             {
                 showrealtime();
                 lblNumLine.Text = t.numLineas.ToString();
-                lblScore.Text = t.score.ToString();
+                lblScore.Text = Tetris.score.ToString();
                 if (down)
                     showrealtime();
                 else
@@ -167,14 +169,17 @@ namespace Tetris
                 {
                     timer1.Stop();
                     timer2.Stop();
-                    MessageBox.Show("Game Over! ");
+                    highscore = Tetris.score;
+                    Form2 f2 = new Form2();
+                    f2.addscore(highscore);
+                    MessageBox.Show("Game Over!! your score "+highscore);
                 }
             }
             else
             {
                 
                 lblNumLine.Text = t.numLineas.ToString();
-                lblScore.Text = t.score.ToString();
+                lblScore.Text = Tetris.score.ToString();
                 constuct();
                 t.levelup();               
                 lblv.Text = ((int)t.level + 1).ToString();
@@ -249,10 +254,35 @@ namespace Tetris
         private void timer2_Tick(object sender, EventArgs e)
         {
 
-            if (t.numLineas < constants.scountlv)
+            if (t.pnumLineas < constants.scountlv)
             {
                 showrealtime();
             }
+        }
+
+
+        private void hIGHTSCOREToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        
+
+        private void hƯỚNGDẪNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.ShowDialog();
+        }
+
+        private void pAUSEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fpause();
+        }
+
+        private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

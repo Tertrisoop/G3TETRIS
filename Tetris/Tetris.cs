@@ -16,7 +16,9 @@ namespace Tetris
         private int m_score;                   //deim
         private int m_lv;                        //cấp độ
         private int m_numline;                    //đếm dòng
+        private int p_numline;
         private Random r;
+        public static int score = 0;
 
         #region vẽ và thiết lập xoay cho các khối gạch
         public Tetris()
@@ -202,20 +204,19 @@ namespace Tetris
             }
         }
 
-        public int score
-
-        {
-            get
-            {
-                return m_score;
-            }
-        }
-
         public int numLineas
         {
             get
             {
                 return m_numline;
+            }
+        }
+
+        public int pnumLineas
+        {
+            get
+            {
+                return p_numline;
             }
         }
 
@@ -257,7 +258,7 @@ namespace Tetris
                 if (numlinecomplete > 0)
                     m_score += calculatescore(numlinecomplete);
                 m_numline += numlinecomplete;
-
+                p_numline += numlinecomplete;
             }
             if (!m_end)
                 m_matrixP.pintBrick(m_BrickActual);
@@ -304,6 +305,7 @@ namespace Tetris
         {
             m_score = 0;
             m_numline = 0;
+            p_numline = 0;
             m_lv = 0;
             constuct();
         }
@@ -312,8 +314,8 @@ namespace Tetris
         {
             if (m_lv < 9)
                 m_lv++;
-            m_numline = 0;
-            constuct();
+            p_numline = 0;
+         
         }
 
         public void constuct()        //khởi tạo
@@ -332,10 +334,21 @@ namespace Tetris
 
         private int calculatescore(int numlinecomplete)      //tính điểm khi ăn dòng
         {
-            int score = 0;
-
-            score += numlinecomplete * 50;
-
+            switch (numlinecomplete)
+            {
+                case 1:
+                    score += 10 * (m_lv + 1);
+                    break;
+                case 2:
+                    score += 2 * 10 * (m_lv + 1);
+                    break;
+                case 3:
+                    score += 4 * 10 * (m_lv + 1);
+                    break;
+                case 4:
+                    score += 10 * 10 * (m_lv + 1);
+                    break;
+            }
             return score;
         }
     }

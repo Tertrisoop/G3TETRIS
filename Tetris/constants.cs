@@ -20,7 +20,7 @@ namespace Tetris
         public const int scountlv = 20; //số lượng dòng của cấp
 
         //các màu dành cho các khối gạch
-        private static Color[] m_COLOR = new Color[7] { Color.Red, Color.Blue, Color.DarkOrange, Color.DeepPink, Color.Violet, Color.Beige, Color.DarkMagenta };
+        private static Color[] m_COLOR = new Color[7] { Color.Yellow, Color.Crimson, Color.DeepPink, Color.Indigo, Color.SteelBlue, Color.DarkGreen, Color.OrangeRed };
 
         //tốc độ chạy của game tăng dần theo từng level
         private static int[] m_level = new int[10] { 1000, 800, 640, 512, 410, 328, 262, 210, 168, 134 };
