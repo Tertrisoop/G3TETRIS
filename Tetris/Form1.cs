@@ -105,7 +105,7 @@ namespace Tetris
         {
             Bitmap B = new Bitmap(playzone.Width, playzone.Height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             Graphics G = Graphics.FromImage(B);
-            G.Clear(Color.Turquoise);
+            G.Clear(Color.DarkKhaki);
             for (int x = 0; x < constants.playzonecol; x++)
             {
                 for (int y = 0; y < constants.playzonerow; y++)
@@ -124,7 +124,7 @@ namespace Tetris
         {
             Bitmap B = new Bitmap(futurebrick.Width, futurebrick.Height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             Graphics G = Graphics.FromImage(B);
-            G.Clear(Color.Turquoise);
+            G.Clear(Color.Black);
             for (int x = 0; x < constants.ybrick; x++)
             {
                 for (int y = 0; y < constants.xbrick; y++)
@@ -253,32 +253,6 @@ namespace Tetris
             {
                 showrealtime();
             }
-        }
-
-        private void lblNumLine_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gAMEToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void playzone_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pAUSEToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gIỚITHIỆUToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form2 review = new Form2();
-            review.ShowDialog();
         }
     }
 }
