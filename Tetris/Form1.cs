@@ -29,6 +29,8 @@ namespace Tetris
         private void sTARTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             newgame();
+            music m = new music();
+            m.bgsound();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -167,12 +169,15 @@ namespace Tetris
                 nextbrick(t.BrickSiguiente);
                 if (t.end)
                 {
+                    music m = new music();
+                    m.winner();
                     timer1.Stop();
                     timer2.Stop();
                     highscore = Tetris.score;
                     Form2 f2 = new Form2();
                     f2.addscore(highscore);
                     MessageBox.Show("Game Over!! your score "+highscore);
+                    
                 }
             }
             else
@@ -282,7 +287,8 @@ namespace Tetris
 
         private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
+            Application.Exit();
         }
     }
 }

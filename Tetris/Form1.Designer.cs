@@ -90,7 +90,7 @@
             // 
             this.sTARTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.sTARTToolStripMenuItem.Name = "sTARTToolStripMenuItem";
-            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.sTARTToolStripMenuItem.Text = "START";
             this.sTARTToolStripMenuItem.Click += new System.EventHandler(this.sTARTToolStripMenuItem_Click);
             // 
@@ -98,7 +98,7 @@
             // 
             this.pAUSEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.pAUSEToolStripMenuItem.Name = "pAUSEToolStripMenuItem";
-            this.pAUSEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pAUSEToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.pAUSEToolStripMenuItem.Text = "PAUSE";
             this.pAUSEToolStripMenuItem.Click += new System.EventHandler(this.pAUSEToolStripMenuItem_Click);
             // 
@@ -106,7 +106,7 @@
             // 
             this.eXITToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
-            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.eXITToolStripMenuItem.Text = "EXIT";
             this.eXITToolStripMenuItem.Click += new System.EventHandler(this.eXITToolStripMenuItem_Click);
             // 
@@ -114,7 +114,7 @@
             // 
             this.hIGHTSCOREToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGreen;
             this.hIGHTSCOREToolStripMenuItem.Name = "hIGHTSCOREToolStripMenuItem";
-            this.hIGHTSCOREToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hIGHTSCOREToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.hIGHTSCOREToolStripMenuItem.Text = "HIGHT SCORE";
             this.hIGHTSCOREToolStripMenuItem.Click += new System.EventHandler(this.hIGHTSCOREToolStripMenuItem_Click);
             // 
@@ -143,6 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Aquamarine;
             this.label1.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(34, 171);
             this.label1.Name = "label1";
@@ -153,6 +154,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Aquamarine;
             this.label2.Font = new System.Drawing.Font("Matura MT Script Capitals", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(96, 223);
             this.label2.Name = "label2";
@@ -163,6 +165,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Aqua;
             this.label3.Font = new System.Drawing.Font("Matura MT Script Capitals", 15.75F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(71, 278);
             this.label3.Name = "label3";

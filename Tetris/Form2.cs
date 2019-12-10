@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
@@ -15,14 +16,16 @@ namespace Tetris
     {
         List<int> listScore = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         string sFileScore = @"D:\STD\CS OOP\clonegit\G3TETRIS\score.json";
+        string FileScore;
         public Form2()
         {
             InitializeComponent();
-            
+            FileScore = (Assembly.GetEntryAssembly().Location + "");
+            FileScore = FileScore.Replace("Tetris.exe", "score.json");
             if (System.IO.File.Exists(sFileScore))
             {
                 string sJson;
-                sJson = System.IO.File.ReadAllText(sFileScore);
+                sJson = System.IO.File.ReadAllText(FileScore);
                 if (sJson != null)
                 {
                     JavaScriptSerializer serial = new JavaScriptSerializer();
@@ -68,7 +71,7 @@ namespace Tetris
 
             JavaScriptSerializer serial = new JavaScriptSerializer();
             string sJson = serial.Serialize(listScore);
-            System.IO.File.WriteAllText(sFileScore, sJson);
+            System.IO.File.WriteAllText(FileScore, sJson);
         }
 
         
