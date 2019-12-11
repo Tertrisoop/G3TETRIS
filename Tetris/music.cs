@@ -20,7 +20,7 @@ namespace Tetris
             path_sound = path_sound.Replace("Tetris.exe", "BlueSapphire.wav");
 
             SoundPlayer player1 = new SoundPlayer(path_sound);
-            player1.Play();
+            player1.PlayLooping();
         }
 
         //public  void PlayMusic()
