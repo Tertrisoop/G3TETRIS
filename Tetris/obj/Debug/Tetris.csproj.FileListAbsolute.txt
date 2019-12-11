@@ -42,3 +42,5 @@ D:\STD\CS OOP\New folder\tets\Tetris\obj\Debug\Tetris.Form3.resources
 D:\STD\CS OOP\New folder\tets\Tetris\obj\Debug\Tetris.Form4.resources
 D:\STD\CS OOP\clonegit\G3TETRIS\Tetris\obj\Debug\Tetris.Form3.resources
 D:\STD\CS OOP\clonegit\G3TETRIS\Tetris\obj\Debug\Tetris.Form4.resources
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.Form3.resources
+D:\G3\G3TETRIS\Tetris\obj\Debug\Tetris.Form4.resources

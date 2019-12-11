@@ -15,18 +15,17 @@ namespace Tetris
     public partial class Form2 : Form
     {
         List<int> listScore = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        string sFileScore = @"D:\STD\CS OOP\clonegit\G3TETRIS\score.json";
         string FileScore;
         public Form2()
         {
             InitializeComponent();
             FileScore = (Assembly.GetEntryAssembly().Location + "");
             FileScore = FileScore.Replace("Tetris.exe", "score.json");
-            if (System.IO.File.Exists(sFileScore))
+            if (System.IO.File.Exists(FileScore))
             {
                 string sJson;
                 sJson = System.IO.File.ReadAllText(FileScore);
-                if (sJson != null)
+                if (sJson != "")
                 {
                     JavaScriptSerializer serial = new JavaScriptSerializer();
                     listScore = serial.Deserialize<List<int>>(sJson);
